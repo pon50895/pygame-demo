@@ -40,3 +40,5 @@ class Player(pygame.sprite.Sprite):
     def shoot(self):
         bullet = Bullet(self.rect.centerx, self.rect.top)
         return bullet
+    def loseLife(self):
+        self.lives -= 1
